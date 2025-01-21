@@ -87,6 +87,10 @@ pub const shaders = struct {
 
 pub const imgui = @import("cimgui");
 
+// sokol
+
+pub const sokol = @import("sokol");
+
 // initial setup. Call before any other Delve Framework functions!
 pub fn init(allocator: std.mem.Allocator) !void {
     mem.init(allocator);
