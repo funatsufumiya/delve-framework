@@ -45,5 +45,9 @@
         .stb_truetype = .{
             .path = "3rdparty/stb_truetype",
         },
+        .delve = .{
+            .url = "git+https://github.com/funatsufumiya/delve-framework#70009e9fee9c5d2e8d5ec2b33d48b41debbc6f23",
+            .hash = "1220cd1168d86649e29fe4473b0724ee44f5284c4d21ec73ce7ec804cb120fd8fde5",
+        },
     },
 }

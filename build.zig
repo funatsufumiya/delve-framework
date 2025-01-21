@@ -113,6 +113,13 @@ pub fn build(b: *std.Build) !void {
         .optimize = optimize,
     });
 
+    // Sokol module (submodule)
+    _ = b.addModule("sokol", .{
+        .root_source_file = b.path("src/framework/reexports/sokol.zig"),
+        .target = target,
+        .optimize = optimize,
+    });
+
     for (build_collection.add_imports) |build_import| {
         delve_mod.addImport(build_import.name, build_import.module);
     }
